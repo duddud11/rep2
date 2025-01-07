@@ -20,5 +20,3 @@ jobs:
           echo "Current environment:"
           uname -a
           lsb_release -a
-      - name: Custom step added in PR
-        run: echo "This is a custom step from the PR"
