@@ -19,3 +19,4 @@ jobs:
           go-version: '1.18'
 
       - name: Verify Go installation
+        run: go version
