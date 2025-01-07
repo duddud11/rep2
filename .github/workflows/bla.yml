@@ -6,9 +6,8 @@ on:
       - main
 
 jobs:
-  setup-go:
+  example-job:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -20,3 +19,9 @@ jobs:
 
       - name: Verify Go installation
         run: go version
+
+      - name: Print environment info
+        run: |
+          echo "Current environment:"
+          uname -a
+          lsb_release -a
