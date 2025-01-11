@@ -1,4 +1,10 @@
 pipeline:
+  trigger: null
+  event:
+    include:
+      - pull_request
+      - push
+      - tag
   name: 1b
   identifier: b
   projectIdentifier: default_project
