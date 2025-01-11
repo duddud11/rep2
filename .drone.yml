@@ -1,0 +1,21 @@
+---
+kind: pipeline
+name: saga-docs
+
+trigger:
+  event:
+    include:
+      - pull_request
+      - push
+      - tag
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+  - name: Install dependencies and build
+    image: node:18-alpine
+    commands:
+      - yarn install
+      - yarn build
