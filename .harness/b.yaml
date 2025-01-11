@@ -1,5 +1,5 @@
 pipeline:
-  trigger: null
+  trigger: pull_request
   event:
     include:
       - pull_request
