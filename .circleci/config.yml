@@ -29,6 +29,7 @@ workflows:
     jobs:
       - say-hello:
           filters:
-            pull_requests:
+            branches:
               only:
-                - "main"
+                - master
+                - main
