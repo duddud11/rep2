@@ -13,7 +13,3 @@ jobs:
       - run: go generate -tags tools internal/tools/tools.go
       - run: go run cmd/changelog-check/main.go ${{ github.event.pull_request.number }}
         working-directory: ./internal/tools
-        env:
-          GITHUB_OWNER: cloudflare
-          GITHUB_REPO: cloudflare-go
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
